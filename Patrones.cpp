@@ -40,6 +40,13 @@ void Patrones(){
             }
         }
 
+        Serial.print("\n\n\n\n\n\n\n\n\n\n\n");  
+        Serial.print("Ejecutando patrones alternadamente (");
+  		Serial.print(Ajustes[0]/40);
+  		Serial.print(" segundos de retraso entre patrones y ");
+  		Serial.print(Ajustes[1]);
+  		Serial.print(" repeticiones)");
+
         while(Ajustes[1]>0, Ajustes[1]--){
 
             Patron = new short unsigned int*[4]; //Patron1[4][2]={{231,129},{195,66},{129,36},{0,24}};
